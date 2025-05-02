@@ -2,6 +2,7 @@ body{
     background-color: black;
     color: white;
     font-family: 'JetBrains Mono',sans-serif;
+    overflow-x: hidden;
 }
 
 .navbar-text{
@@ -10,4 +11,30 @@ body{
 
 .disable {
     color: gray;
+}
+
+#self-image{
+    border-color: white;
+    border-width: 100px;
+}
+#hello {
+    font-size: 110px;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 2px solid black;
+    width: 0;
+    animation: typing 3s steps(30, end) forwards, blink 2s step-end infinite;
+}
+  
+@keyframes typing {
+    from { width: 0; }
+    to { width: 30ch; }
+}
+  
+@keyframes blink {
+    50% { border-color: transparent; }
+}
+
+#intro {
+    font-size: 30px;
 }
