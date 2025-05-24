@@ -83,8 +83,33 @@ body {
   font-size: large;
 }
 
+.content-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 20px;
+  flex-wrap: wrap; /* Biar responsif */
+  padding: 0 20px;
+}
+
 .fixed-size {
-  width: 300px;
-  height: 200px;
-  object-fit: cover; /* supaya gambar tetap proporsional dan tidak terdistorsi */
+  width: 350px;
+  height: 250px;
+  object-fit: cover;
+  flex-shrink: 0;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(255,255,255,0.1);
+}
+
+.text-container {
+  max-width: 600px;
+  text-align: justify;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.slide-left {
+	-webkit-animation: slide-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
