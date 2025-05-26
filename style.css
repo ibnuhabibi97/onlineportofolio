@@ -108,19 +108,3 @@ body {
   font-size: 1rem;
   line-height: 1.6;
 }
-
-.slide-left {
-  position: relative;
-  animation: slide-left 0.5s ease-out both;
-}
-
-@keyframes slide-left {
-  0% {
-    transform: translateX(0);
-    opacity: 0;
-  }
-  100% {
-    transform: translateX(-30px);
-    opacity: 1;
-  }
-}
